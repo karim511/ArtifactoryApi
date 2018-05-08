@@ -1,15 +1,17 @@
 # ArtifactoryApi for rundeck
 
-generate war file and put him in /artifactory-oss-5.10.3/tomcat/webapps folder
+Generate war file and put him in /artifactory-oss-5.10.3/tomcat/webapps folder
 
-# url parameters
-repo=rep1,rep2,....
-fileNames=ear,*.txt  // any type you looking for
+<h4>url parameters</h4>
+<b>repo</b>=rep1,rep2,....<br />
+<b>fileNames</b>=ear,*.txt  // any type you looking for
 
-# Service example
+<h4>Example</h4>
 http://localhost:8081/ArtifactoryApi/api?repo=libs-release-local,libs-snapshot-local&fileNames=*.ear
 
 # Result
+```javascript
+
 [
   {
     "name": "com.ping.ear-0.0.3-SNAPSHOT.ear - 25/04/2018 [11:10]",
@@ -32,3 +34,4 @@ http://localhost:8081/ArtifactoryApi/api?repo=libs-release-local,libs-snapshot-l
     "value": "libs-snapshot-local/com/ping/back/com.ping.ear/0.0.1-SNAPSHOT/com.ping.ear-0.0.1-SNAPSHOT.ear"
   }
 ]
+```
