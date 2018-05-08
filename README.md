@@ -1,5 +1,6 @@
 # ArtifactoryApi for rundeck
 
+Change the configuration in artifactory.properties <br>
 Generate war file and put him in /artifactory-oss-5.10.3/tomcat/webapps folder
 
 <h4>url parameters</h4>
