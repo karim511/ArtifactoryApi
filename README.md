@@ -7,8 +7,15 @@ Generate war file and put him in /artifactory-oss-5.10.3/tomcat/webapps folder
 <b>repo</b>=rep1,rep2,....<br />
 <b>fileNames</b>=ear,*.txt  // any type you looking for
 
+<h4>In Artifactory</h4>
+Security-> Security Configuration
+uncheck  Allow Anonymous Access
+
+
 <h4>Example</h4>
 http://localhost:8081/ArtifactoryApi/api?repo=libs-release-local,libs-snapshot-local&fileNames=*.ear
+
+
 
 # Result
 ```javascript
